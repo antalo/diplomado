@@ -1,0 +1,335 @@
+@import url(http://fonts.googleapis.com/css?family=Vibur);
+*, *:after, *:before {
+  box-sizing: border-box;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body {
+
+  font-family: arial;
+  overflow-x:hidden;
+}
+.fondo__imagen{
+  background: url("Imagenes/colegio1.jpg") no-repeat fixed;
+  background-size: cover;
+  background-color: #008784;
+}
+
+footer
+{
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    background-color: #272727;
+    padding: 10px 20px;
+    left: 0;
+}
+footer p{
+text-align: center;
+color: gray;
+margin: 0;
+font-size: 12px;
+}
+
+.contenedor__form {
+  max-width: 340px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+  margin: auto;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  max-height:500px;
+  overflow: hidden;
+}
+.contenedor__form h1 {
+  font-size: 60px;
+  margin: 25px 0 15px;
+  display: inline-block;
+  width: 100%;
+  font-weight: 200;
+  color: #FE5F01;
+  font-family: 'Vibur', cursive;
+}
+.contenedor__form h4 {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: left;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  color: #ff9e02;
+  border-bottom: 1px solid #ffbe02;
+}
+
+.btn {
+  border: 1px solid #d44f01;
+  padding: 10px;
+  border-radius: 20px;
+  width: 100%;
+  margin-top: 15px;
+  background: #FE5F01;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.contenedor__margen {
+  padding: 25px;
+  max-width: 300px;
+  margin: auto;
+}
+
+.contenedor__grupo {
+  border-bottom: 1px solid #ffbe02;
+  position: relative;
+  margin-bottom: 15px;
+}
+.contenedor__grupo:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  background: #fff;
+  width: 0px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -2px;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.contenedor__grupo .form-control {
+  border: none;
+  height: 35px;
+  position: relative;
+  z-index: 2;
+  padding: 5px;
+  background: none;
+  color: #FE5F01;
+  width: 100%;
+}
+
+.contenedor__grupo .form-control:focus, .contenedor__grupo .form-control:active {
+  box-shadow: none;
+  outline: none;
+}
+*::-webkit-input-placeholder {
+    /* Google Chrome y Safari */
+    font-weight: 300;
+    color: #ff8801;
+    font-size: 14px;
+    min-height: 17px;
+    text-align: left;
+}
+
+.inicio__diferente a{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  color: #ff8801 !important;
+  text-decoration: none;
+}
+
+.redes a{
+  border-radius: 5px;
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  padding-top: 13px;
+  margin: 0;
+  position: relative;
+  margin-right: 15px;
+  text-align: center;
+  text-decoration: none;
+}
+.redes .fa-twitter{
+background: #00ACED;
+color: #FFF;
+}
+.redes .fa-facebook{
+  background: #3B579D;
+  color: #FFF;
+}
+.redes .fa-instagram{
+  background: #125688;
+  color:#FFF;
+}
+/*Olvido su contraseña*/
+.contenedor__principal,.contenedor__subtitulo,.contenedor__text,.contenedor__enviar{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor__principal{
+  height: 200px;
+}
+.contenedor__subtitulo{
+  height: 100px;
+}
+.contenedor__text{
+height: 50px;
+width: 40%;
+margin: auto;
+}
+.contenedor__enviar{
+height: 50px;
+}
+.fa-home{
+  font-size: 40px;
+  color: #fff;
+}
+a{
+  color: #fff !important;
+}
+.navbar-brand{
+  display: flex;
+  align-items: center;
+}
+
+.navbar-inverse{
+  background-color: #2196f3;
+  border: #2196f3;
+}
+.contenedor__enviar input{
+  padding: 10px 30px;
+}
+.contenedor__form .contenedor__enviar button{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.contenedor__enviar button {
+  margin-top: 50px;
+  background: #27AE60;
+  border: none;
+  font-size: 1.6em;
+  font-weight: 300;
+  padding: 5px 0;
+  width: 25%;
+  border-radius: 3px;
+  color: #b3eecc;
+  border-bottom: 4px solid #1e8449;
+}
+
+
+@media (max-width: 600px) {
+.contenedor__principal h1{
+  font-size: 30px;
+}
+
+.contenedor__enviar button{
+  width: 50%;
+}
+.contenedor__text{
+  width: 100%;
+}
+
+.fa-home{
+  font-size: 40px;
+}
+}
+
+/*Registro de estudiantes*/
+.h1__centrado{
+  display: flex;
+  justify-content: center;
+}
+
+.aling__input{
+  width: 50%;
+  margin: auto;
+}
+.input__margen {
+  margin-top: 20px;
+}
+.sexo__style{
+  padding-right: 20px;
+}
+
+@media (max-width: 600px) {
+.aling__input{
+  width: 100%;
+  margin: auto;
+}
+h1{
+  font-size: 29px;
+}
+}
+/* Notas-actuales*/
+.active{
+  background-color: #166898 !important;
+  color:#fff;
+  border-bottom: 4px solid #1e8449;
+}
+
+
+.menu__notas{
+  color:#FFF;
+  border-radius: 5px;
+  width: 100%;
+  height: 30px;
+  background-color: #009DE2;
+
+}
+.menu__notas a{
+  text-decoration: none;
+  cursor:pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+}
+.menu__notas:hover{
+  background-color: #166898 ;
+  color:#fff;
+  border-bottom: 4px solid #1e8449;
+  transition: 1s;
+}
+
+.contedor__imagen{
+  height: 300px;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor_tabla{
+  width: 75%;
+margin: auto;
+margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+.sinpadding [class*="col-"] {
+      padding: 0;
+  }
+  .menu__notas{
+    margin-top: 10px;
+  }
+.contenedor_tabla{
+  width: 100%;
+  margin-bottom: 30px;
+}
+}
+
+/*Materias Actuales*/
+.contendor__materias{
+  display: flex;
+  justify-content: center;
+}
+.color__hiperbinculo a{
+  color:#000 !important;
+}
+
+.clase-general{
+  display: table-row;
+}
